@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
  labels:
- k8s - app: rocketchat
+ k8s-app: rocketchat
 name: rocketchat
 namespace: production
 spec:
@@ -10,4 +10,4 @@ spec:
 ports:
  -port: 3000
 selector:
- k8s - app: rocketchat
+ k8s-app: rocketchat

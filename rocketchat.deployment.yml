@@ -8,7 +8,7 @@ spec:
 template:
  metadata:
  labels:
- k8s - app: rocketchat
+ k8s-app: rocketchat
 spec:
  containers:
  -name: rocketchat
