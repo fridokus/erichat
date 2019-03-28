@@ -31,7 +31,7 @@ spec:
         - name: mongodata
           mountPath: /data/db
         command: ["mongod"]
-        args: ["--bind_ip_all"]
+        args: ["--bind_ip_all","-f","/etc/mongod.conf"]
       volumes:
       - name: mongodata
         persistentVolumeClaim:
