@@ -20,6 +20,7 @@ spec:
           value: "http://chat.testbed.lan"
         - name: MONGO_URL
           value: "mongodb://rocket:rocket@mongo:27017/rocketchat"
+
 ---
 apiVersion: v1
 kind: Service
@@ -34,3 +35,4 @@ spec:
   ports:
   - port: 3000
     targetPort: 3000
+
