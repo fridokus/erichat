@@ -1,0 +1,142 @@
+*.un~
+
+# Handled by workspace setup
+/tmp/
+/logs/
+/build/tmp/
+/build/logs/
+
+# Ttcn
+/internal/ttcn3/build
+
+# T-REQs
+/requirements/**/*.html
+/requirements/*.html
+
+# Rhapsody
+*.rpw
+*.ehl
+*.save
+*.rpl
+filesTable.dat
+*_auto_rpy/
+/tools/rhapsody/rhpdir/
+/rgd/
+/.mw*/
+CGCompatibilityPre*
+
+# Eclipse generated python project
+.pydevproject
+
+# VS code generated ctags files
+/.vscode/tags
+/.vscode/browse.VC.*
+/.vscode/md2html
+
+# Generated files
+**/.cquery_cached_index
+**/.ccls-cache
+*.a
+*.class
+*.com
+*.d
+*.dll
+*.elf
+*.elf.unstripped
+*.exe
+*.gen.cpp
+*.gen.h
+*.o
+*.pb.cc
+*.pb.h
+*.pyc
+*.so
+*_compiled.mib
+.settings/
+/build/
+TAGS
+generated_files/
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files and backup
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+*~
+.*.swp
+
+# kconfig menu system
+tools/build/kconfig/scripts
+tools/build/kconfig/.config
+
+# Coverity intermediate dir
+/rgd_coverity/
+
+# Deleted files
+seos/sdk
+
+# Component Test framework files
+application/PgwControlPlane/*/obj
+application/PgwControlPlane/*/out
+application/PgwControlPlane/*/component_test
+application/PgwControlPlane/*/FanIn_FanOut.svg
+application/PgwControlPlane/*/FanIn_FanOut.png
+application/PgwControlPlane/*/mock-src
+application/PgwControlPlane/*/mock-src/*_Mock.h
+application/PgwControlPlane/*/mock-src/*_stub.cpp
+application/PgwControlPlane/*/mock-src/*_stub_main.cpp
+application/PgwControlPlane/*/sequence-diagram.txt
+application/PgwControlPlane/*/sequence-diagram.png
+application/PgwControlPlane/*/automock_temp_makeenv1
+application/PgwControlPlane/*/automock_temp_makeenv2
+application/PgwControlPlane/*/automock_temp_makeenv3
+application/PgwControlPlane/debug-elc64/*/tmp/out/*_stub.cpp
+application/PgwControlPlane/debug-elc64/*/tmp/out/*_stub_main.cpp
+application/PgwControlPlane/debug-elc64/*/tmp/*
+application/PgwControlPlane/_mock-code/*
+application/PgwControlPlane/all
+
+# Libtoolingtest generated temporaries
+tools/test/libtoolingtest/CMakeCache.txt
+tools/test/libtoolingtest/CMakeFiles/
+tools/test/libtoolingtest/Makefile
+tools/test/libtoolingtest/cmake_install.cmake
+tools/test/libtoolingtest/testtool
+
+#Include TTX dirs that are wrongfully excluded
+!ttx*.d
+
+
+#k8s config files
+*.admin.conf
+
+# Python caches.
+.pytest_cache/
+/.mypy_cache
+
+# Helm
+.helm/
+.helm_temp_ws/
+
+# Bob
+charts/eric-epg/requirements.yaml
+

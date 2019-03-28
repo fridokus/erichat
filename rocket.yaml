@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rocketchat
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+         app: rocketchat
+    spec:
+      containers:
+      - name: rocketchat
+        image: rocketchat/rocket.chat:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: ROOT_URL
+          value: "http://chat.testbed.lan"
+        - name: MONGO_URL
+          value: "mongodb://rocket:rocket@mongo:27017/rocketchat"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rocketchat
+  labels:
+    app: rocketchat
+spec:
+  selector:
+    app: rocketchat
+  type: NodePort
+  ports:
+  - port: 3000
+    targetPort: 3000
