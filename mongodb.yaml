@@ -30,6 +30,8 @@ spec:
         volumeMounts:
         - name: mongodata
           mountPath: /data/db
+        command: ["mongod"]
+        args: ["--bind_ip_all"]
       volumes:
       - name: mongodata
         persistentVolumeClaim:
