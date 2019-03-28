@@ -19,7 +19,7 @@ spec:
         - name: ROOT_URL
           value: "http://chat.testbed.lan"
         - name: MONGO_URL
-          value: "mongodb://rocket:rocket@mongo:27017/rocketchat"
+          value: "mongodb://root:password@mongo:27017/rocketchat"
 
 ---
 apiVersion: v1
